@@ -32,7 +32,7 @@ jobs:
       with:
        # Github Token
         token: ${{ secrets.GITHUB_TOKEN }}
-        config: tslint.json  
+        pattern: '*.ts'
       
     - name: Check copyright headers
       run: yarn copyright:check
