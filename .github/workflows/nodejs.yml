@@ -31,7 +31,8 @@ jobs:
       uses: mooyoul/tslint-actions@v1.1.1
       with:
        # Github Token
-        token: ${{ secrets.GITHUB_TOKEN }}   
+        token: ${{ secrets.GITHUB_TOKEN }}
+        config: tslint.json  
       
     - name: Check copyright headers
       run: yarn copyright:check
