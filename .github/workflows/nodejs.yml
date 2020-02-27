@@ -28,7 +28,7 @@ jobs:
        # Artifact name
        name: test
        # Directory containing files to upload
-       path: ${{ GITHUB_WORKSPACE }}
+       path: ${{ github.workspace }}
    
     - name: Install dependencies
       run: yarn install --frozen-lockfile
