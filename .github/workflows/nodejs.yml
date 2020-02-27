@@ -25,6 +25,12 @@ jobs:
         
     - name: Install dependencies
       run: yarn install --frozen-lockfile
+    
+    - name: TSLint checks
+      uses: mooyoul/tslint-actions@v1.1.1
+      with:
+       # Github Token
+        token: ${{ secrets.GITHUB_TOKEN }}   
       
     - name: Check copyright headers
       run: yarn copyright:check
